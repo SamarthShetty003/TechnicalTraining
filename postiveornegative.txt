@@ -1,0 +1,15 @@
+//program to check positive or negative   
+#include<stdio.h>
+int main ()
+{
+  int n, positive, negative;
+  printf ("Enter a number\n");
+  scanf ("%d", &n);
+  if (n > 0)
+    {
+      printf ("%d is pos\n", n);
+    }
+  else
+    printf ("%d is neg\n", n);
+  return 0;
+}
