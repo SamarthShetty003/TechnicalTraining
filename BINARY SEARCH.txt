@@ -1,0 +1,29 @@
+//BINARY SEARCH
+#include <stdio.h>
+int main()
+{
+  int arr[]={10,20,30,40,50,80},se;
+  //finding size of std::array<T, N> ;
+  int size= sizeof(arr)/sizeof(arr[0]);
+  //getting the element to be searched
+  scanf("%d",&se);
+  //implementing binary search algorithm
+  for(int lb=0,ub=size-1;lb<=ub;){
+      //middle element index
+      int mid =(lb+ub)/2;
+      //checking wheather the middle element is search element
+      if(arr[mid]==se){
+          printf("foun @%d",mid);//terminates THE application-exit 0
+          return 0;
+      
+  }
+  //checking whether middle element is greater than search element
+  else if(arr[mid]>se)
+  ub=mid+1;//if so change the upper bound
+else
+lb=mid+1;//else change the lower bound
+    
+}
+printf("not found");
+return 0;
+}
